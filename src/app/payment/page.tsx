@@ -33,10 +33,7 @@ const PaymentPage = () => {
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
               {prices &&
                 prices.map((price) => (
-                  <PricingCard
-                    key={price.id}
-                    price={price}
-                  />
+                  <PricingCard price={price} />
                 ))}
             </div>
           </div>
